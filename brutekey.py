@@ -61,7 +61,7 @@ else:
     m=msg.split("--")
     decodeurl=urllib.unquote(m[0])
     f=open("word.txt","r")
-    print "Please Wait ... \n"
+    print "\n\nPlease Wait ... \n\n"
     for i in f.readlines():
         i=i.strip("\n")
         if brutekey(i.rstrip("\n"),decodeurl)==m[1]:
